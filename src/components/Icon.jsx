@@ -1,0 +1,62 @@
+const icons = {
+  hands: (
+    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+      <path
+        d="M7.2 12.7c-1.2-.6-2.2-1.6-2.5-2.7-.3-1.3.4-2.6 1.7-3.2 1.2-.5 2.7-.2 3.6.8l.4.5.4-.5c.9-1 2.4-1.3 3.6-.8 1.3.6 2 1.9 1.7 3.2-.3 1.2-1.3 2.2-2.5 2.7l-3.2 1.6-3.2-1.6z"
+        fill="currentColor"
+      />
+      <path
+        d="M6.2 14.1 12 17l5.8-2.9M6.5 16.4 12 19l5.5-2.6"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  ),
+  heart: (
+    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+      <path
+        d="M12 21s-7.2-4.6-9.7-9C.5 8.8 2.3 5.8 5.4 5.2c1.7-.3 3.5.4 4.6 1.8 1.1-1.4 2.9-2.1 4.6-1.8 3.1.6 4.9 3.6 3.1 6.8-2.5 4.4-9.7 9-9.7 9z"
+        fill="currentColor"
+      />
+    </svg>
+  ),
+  community: (
+    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+      <path
+        d="M9 11a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm9 0a3 3 0 1 0-3-3 3 3 0 0 0 3 3zM9 13c-2.8 0-5 1.9-5 4.2V19h10v-1.8C14 14.9 11.8 13 9 13zm9 0c-1.3 0-2.4.3-3.3.9.8.9 1.3 2 1.3 3.3V19h8v-1.8c0-2.3-2.2-4.2-6-4.2z"
+        fill="currentColor"
+      />
+    </svg>
+  ),
+  facebook: (
+    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+      <path
+        d="M14 8.8V7.2c0-.7.4-1.2 1.3-1.2H17V3h-2.2C12.2 3 11 4.4 11 6.9v1.9H9v3h2V21h3v-9.3h2.4l.4-3H14z"
+        fill="currentColor"
+      />
+    </svg>
+  ),
+  twitter: (
+    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+      <path
+        d="M20.9 7.4c.01.2.01.4.01.6 0 6.3-4.8 10.7-10.7 10.7-2.1 0-4.1-.6-5.8-1.7h.8c1.8 0 3.4-.6 4.7-1.6-1.7 0-3.1-1.1-3.6-2.6.2.03.5.05.7.05.3 0 .7-.05 1-.1-1.7-.4-3-1.9-3-3.8v-.05c.5.3 1.1.5 1.7.5-1-.7-1.6-1.8-1.6-3.1 0-.7.2-1.3.5-1.8 1.9 2.3 4.7 3.8 7.9 4 .06-.3.1-.6.1-.9 0-2.2 1.8-4 4-4 1.1 0 2.1.5 2.8 1.3.9-.2 1.7-.5 2.4-.9-.3.9-.9 1.7-1.8 2.2.8-.1 1.5-.3 2.2-.6-.5.8-1.1 1.5-1.8 2.1z"
+        fill="currentColor"
+      />
+    </svg>
+  ),
+  linkedin: (
+    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+      <path
+        d="M6.5 9H3.8v12h2.7V9zM5.1 3.5a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2zM20.2 14.1c0-3.2-1.7-5.2-4.5-5.2-1.3 0-2.2.7-2.5 1.2V9H10.5v12h2.7v-6.3c0-1.7.3-3.3 2.4-3.3 2 0 2 1.9 2 3.4V21h2.7l-.1-6.9z"
+        fill="currentColor"
+      />
+    </svg>
+  ),
+};
+
+export default function Icon({ name }) {
+  return icons[name] ?? null;
+}
+
