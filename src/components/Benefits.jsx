@@ -1,10 +1,10 @@
 import SectionHeading from "./SectionHeading.jsx";
 
 const benefits = [
-  { title: "Watch and listen to our sermons", tone: "one" },
-  { title: "Watch and listen to our sermons", tone: "two" },
-  { title: "Watch and listen to our sermons", tone: "three" },
-  { title: "Watch and listen to our sermons", tone: "four" },
+  { kicker: "The Word", title: "Grow in faith through God's Word", tone: "one" },
+  { kicker: "Community", title: "Become part of a welcoming community", tone: "two" },
+  { kicker: "Service", title: "Serve and make a difference in lives", tone: "three" },
+  { kicker: "Worship", title: "Experience the power of Spirit-led worship", tone: "four" },
 ];
 
 export default function Benefits() {
@@ -22,7 +22,7 @@ export default function Benefits() {
             <article key={`${b.tone}-${idx}`} className={`benefitCard benefitCard--${b.tone}`}>
               <div className="benefitCard__overlay" />
               <div className="benefitCard__content">
-                <p className="benefitCard__kicker">Watch and listen to our sermons</p>
+                <p className="benefitCard__kicker">{b.kicker}</p>
                 <h3 className="benefitCard__title">{b.title}</h3>
               </div>
             </article>

@@ -5,9 +5,7 @@ import App from "./App.jsx";
 import "./styles.css";
 
 import HomePage from "./pages/HomePage.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
-import SermonsPage from "./pages/SermonsPage.jsx";
-import BlogPage from "./pages/BlogPage.jsx";
+import GalleryPage from "./pages/GalleryPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,9 +13,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "about", element: <AboutPage /> },
-      { path: "sermons", element: <SermonsPage /> },
-      { path: "blog", element: <BlogPage /> },
+      { path: "gallery", element: <GalleryPage /> },
     ],
   },
 ]);

@@ -1,22 +1,29 @@
 import Hero from "../components/Hero.jsx";
-import Features from "../components/Features.jsx";
-import LoveAndCompassion from "../components/LoveAndCompassion.jsx";
-import Benefits from "../components/Benefits.jsx";
-import UpcomingSermons from "../components/UpcomingSermons.jsx";
-import ServeWorld from "../components/ServeWorld.jsx";
+import ThemeBanner from "../components/ThemeBanner.jsx";
+import AboutSection from "../components/AboutSection.jsx";
+import SermonsSection from "../components/SermonsSection.jsx";
+import EventsSection from "../components/EventsSection.jsx";
+import MinistriesSection from "../components/MinistriesSection.jsx";
+import GiveSection from "../components/GiveSection.jsx";
+import NewHereSection from "../components/NewHereSection.jsx";
+import PrayerSection from "../components/PrayerSection.jsx";
 import Blog from "../components/Blog.jsx";
+import ContactSection from "../components/ContactSection.jsx";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <Features />
-      <LoveAndCompassion />
-      <Benefits />
-      <UpcomingSermons />
-      <ServeWorld />
+      <ThemeBanner />
+      <AboutSection />
+      <SermonsSection />
+      <EventsSection />
+      <MinistriesSection />
+      <GiveSection />
+      <NewHereSection />
+      <PrayerSection />
       <Blog />
+      <ContactSection />
     </>
   );
 }
-

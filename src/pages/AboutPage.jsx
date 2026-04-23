@@ -3,10 +3,8 @@ import SectionHeading from "../components/SectionHeading.jsx";
 import Icon from "../components/Icon.jsx";
 
 const team = [
-  { name: "Kim Bowen", role: "Pastor, Church" },
-  { name: "Danielle Watkins", role: "Pastor, Church" },
-  { name: "Naomi Craig", role: "Pastor, Church" },
-  { name: "Santos Payne", role: "Pastor, Church" },
+  { name: "Bishop Isaac Karamira", role: "Lead Pastor, Faith Evangelical Church Rwanda" },
+  { name: "Apostle Jane Karamira", role: "Apostle, Faith Evangelical Church Rwanda" },
 ];
 
 export default function AboutPage() {

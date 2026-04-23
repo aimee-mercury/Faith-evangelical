@@ -1,16 +1,18 @@
-import { useEffect, useMemo, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import logoSrc from "../../assets/Logo.jpeg";
 
 const navItems = [
-  { label: "Home", to: "/" },
-  { label: "About Us", to: "/about" },
-  { label: "Sermon", to: "/sermons" },
-  { label: "Blog", to: "/blog" },
+  { label: "Home", href: "/#home" },
+  { label: "About", href: "/#about" },
+  { label: "Sermons", href: "/#sermons" },
+  { label: "Events", href: "/#events" },
+  { label: "Ministries", href: "/#ministries" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const items = useMemo(() => navItems, []);
 
   useEffect(() => {
     const onKeyDown = (e) => {
@@ -30,28 +32,25 @@ export default function Navbar() {
   return (
     <header className="nav" id="home">
       <div className="container nav__inner">
-        <Link className="nav__logo" to="/" aria-label="Faith Evangelical Church">
-          Faith Evangelical Church
-        </Link>
+        <a className="nav__logo" href="/#home" aria-label="Faith Evangelical Church Rwanda">
+          <img src={logoSrc} alt="Faith Evangelical Church Rwanda" className="nav__logoImg" />
+        </a>
 
         <nav className="nav__links" aria-label="Primary">
-          {items.map((item) => (
-            <NavLink
-              key={item.to}
-              className={({ isActive }) => `nav__link ${isActive ? "is-active" : ""}`}
-              to={item.to}
-              end={item.to === "/"}
-            >
+          {navItems.map((item) => (
+            <a key={item.href} className="nav__link" href={item.href}>
               {item.label}
-            </NavLink>
+            </a>
           ))}
+          <a className="btn btn--small btn--cream nav__give" href="/#give">
+            Give
+          </a>
         </nav>
 
         <div className="nav__actions">
-          <a className="btn btn--small btn--cream" href="/#contact">
-            Contact us
+          <a className="btn btn--small btn--cream" href="/#new-here">
+            New Here?
           </a>
-
           <button
             type="button"
             className="nav__burger"
@@ -68,25 +67,21 @@ export default function Navbar() {
 
       <div className={`nav__mobile ${open ? "is-open" : ""}`}>
         <div className="container nav__mobileInner">
-          {items.map((item) => (
-            <NavLink
-              key={item.to}
-              className={({ isActive }) =>
-                `nav__mobileLink ${isActive ? "is-active" : ""}`
-              }
-              to={item.to}
-              end={item.to === "/"}
+          {navItems.map((item) => (
+            <a
+              key={item.href}
+              className="nav__mobileLink"
+              href={item.href}
               onClick={() => setOpen(false)}
             >
               {item.label}
-            </NavLink>
+            </a>
           ))}
-          <a
-            className="btn btn--cream nav__mobileCta"
-            href="/#contact"
-            onClick={() => setOpen(false)}
-          >
-            Contact us
+          <a className="btn btn--cream nav__mobileCta" href="/#give" onClick={() => setOpen(false)}>
+            Give
+          </a>
+          <a className="btn btn--dark nav__mobileCta" href="/#new-here" onClick={() => setOpen(false)}>
+            New Here?
           </a>
         </div>
       </div>

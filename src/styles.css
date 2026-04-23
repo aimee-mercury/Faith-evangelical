@@ -1,11 +1,10 @@
 :root {
   --bg: #ffffff;
-  --sand: #f6f0e7;
-  --ink: #111214;
-  --muted: #6a6c72;
-  --cream: #f4c79a;
-  --cream-2: #f8d9bd;
-  --shadow: 0 18px 50px rgba(14, 14, 16, 0.12);
+  --sand: #eef2f8;
+  --ink: #0f1d36;
+  --muted: #5c7089;
+  --cream: #c9a227;
+  --shadow: 0 18px 50px rgba(15, 29, 54, 0.13);
   --radius: 18px;
   --max: 1120px;
 }
@@ -61,7 +60,7 @@ a {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
-  color: rgba(17, 18, 20, 0.7);
+  color: rgba(15, 29, 54, 0.7);
 }
 
 .h2 {
@@ -108,10 +107,10 @@ a {
 }
 .btn--cream {
   background: var(--cream);
-  color: #151515;
+  color: #0a1526;
 }
 .btn--dark {
-  background: #121214;
+  background: #0f1d36;
   color: #fff;
 }
 
@@ -120,7 +119,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: #0b0b0d;
+  background: #0f1d36;
 }
 .nav__inner {
   height: 76px;
@@ -133,6 +132,13 @@ a {
   color: #fff;
   font-weight: 800;
   letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+}
+.nav__logoImg {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 .nav__links {
   display: flex;
@@ -204,9 +210,9 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.46) 45%, rgba(0, 0, 0, 0.15) 100%),
-    radial-gradient(1200px 600px at 70% 45%, rgba(255, 216, 187, 0.28), transparent 60%),
-    radial-gradient(1200px 700px at 20% 20%, rgba(255, 255, 255, 0.08), transparent 60%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.50) 45%, rgba(0, 0, 0, 0.18) 100%),
+    radial-gradient(1200px 600px at 70% 45%, rgba(201, 162, 39, 0.22), transparent 60%),
+    radial-gradient(1200px 700px at 20% 20%, rgba(15, 29, 54, 0.15), transparent 60%),
     url("https://source.unsplash.com/rg2jjAWRWds/1600x900");
   background-size: cover;
   background-position: center;
@@ -263,7 +269,7 @@ a {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.32) 55%, rgba(0, 0, 0, 0.2) 100%),
-    radial-gradient(900px 460px at 70% 35%, rgba(244, 199, 154, 0.18), transparent 62%);
+    radial-gradient(900px 460px at 70% 35%, rgba(201, 162, 39, 0.18), transparent 62%);
   background-size: cover;
   background-position: center;
 }
@@ -362,25 +368,25 @@ a {
 .benefitRow__image--one {
   background-image:
     radial-gradient(900px 320px at 30% 10%, rgba(255, 255, 255, 0.16), transparent 62%),
-    linear-gradient(135deg, rgba(244, 199, 154, 0.35), rgba(18, 18, 20, 0.1)),
+    linear-gradient(135deg, rgba(201, 162, 39, 0.35), rgba(15, 29, 54, 0.1)),
     url("https://source.unsplash.com/900x600/?african,joy,smile");
 }
 .benefitRow__image--two {
   background-image:
     radial-gradient(900px 320px at 50% 10%, rgba(255, 255, 255, 0.16), transparent 62%),
-    linear-gradient(135deg, rgba(18, 18, 20, 0.1), rgba(244, 199, 154, 0.35)),
+    linear-gradient(135deg, rgba(15, 29, 54, 0.1), rgba(201, 162, 39, 0.35)),
     url("https://source.unsplash.com/900x600/?african,bible,study");
 }
 .benefitRow__image--three {
   background-image:
     radial-gradient(900px 320px at 45% 10%, rgba(255, 255, 255, 0.16), transparent 62%),
-    linear-gradient(135deg, rgba(244, 199, 154, 0.35), rgba(18, 18, 20, 0.14)),
+    linear-gradient(135deg, rgba(201, 162, 39, 0.35), rgba(15, 29, 54, 0.14)),
     url("https://source.unsplash.com/900x600/?african,charity,community");
 }
 .benefitRow__image--four {
   background-image:
     radial-gradient(900px 320px at 45% 10%, rgba(255, 255, 255, 0.16), transparent 62%),
-    linear-gradient(135deg, rgba(18, 18, 20, 0.12), rgba(244, 199, 154, 0.32)),
+    linear-gradient(135deg, rgba(15, 29, 54, 0.12), rgba(201, 162, 39, 0.32)),
     url("https://source.unsplash.com/900x600/?african,church,welcome");
 }
 
@@ -406,30 +412,30 @@ a {
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
   background-size: cover;
   background-position: center;
-  outline: 6px solid rgba(244, 199, 154, 0.18);
+  outline: 6px solid rgba(201, 162, 39, 0.18);
 }
 .teamCard__avatar--1 {
   background-image:
     radial-gradient(240px 160px at 30% 20%, rgba(255, 255, 255, 0.22), transparent 60%),
-    linear-gradient(135deg, rgba(244, 199, 154, 0.7), rgba(18, 18, 20, 0.2)),
+    linear-gradient(135deg, rgba(201, 162, 39, 0.7), rgba(15, 29, 54, 0.2)),
     url("https://source.unsplash.com/240x240/?african,portrait,woman");
 }
 .teamCard__avatar--2 {
   background-image:
     radial-gradient(240px 160px at 30% 20%, rgba(255, 255, 255, 0.22), transparent 60%),
-    linear-gradient(135deg, rgba(244, 199, 154, 0.7), rgba(18, 18, 20, 0.2)),
+    linear-gradient(135deg, rgba(201, 162, 39, 0.7), rgba(15, 29, 54, 0.2)),
     url("https://source.unsplash.com/240x240/?african,portrait,smile");
 }
 .teamCard__avatar--3 {
   background-image:
     radial-gradient(240px 160px at 30% 20%, rgba(255, 255, 255, 0.22), transparent 60%),
-    linear-gradient(135deg, rgba(244, 199, 154, 0.7), rgba(18, 18, 20, 0.2)),
+    linear-gradient(135deg, rgba(201, 162, 39, 0.7), rgba(15, 29, 54, 0.2)),
     url("https://source.unsplash.com/240x240/?african,portrait,man");
 }
 .teamCard__avatar--4 {
   background-image:
     radial-gradient(240px 160px at 30% 20%, rgba(255, 255, 255, 0.22), transparent 60%),
-    linear-gradient(135deg, rgba(244, 199, 154, 0.7), rgba(18, 18, 20, 0.2)),
+    linear-gradient(135deg, rgba(201, 162, 39, 0.7), rgba(15, 29, 54, 0.2)),
     url("https://source.unsplash.com/240x240/?african,portrait,person");
 }
 .teamCard__name {
@@ -441,7 +447,7 @@ a {
 .teamCard__role {
   margin: 0 0 12px;
   font-size: 12px;
-  color: rgba(17, 18, 20, 0.62);
+  color: rgba(15, 29, 54, 0.62);
 }
 .teamCard__social {
   display: flex;
@@ -454,9 +460,9 @@ a {
   border-radius: 10px;
   display: grid;
   place-items: center;
-  background: rgba(18, 18, 20, 0.06);
-  border: 1px solid rgba(18, 18, 20, 0.08);
-  color: rgba(18, 18, 20, 0.72);
+  background: rgba(15, 29, 54, 0.06);
+  border: 1px solid rgba(15, 29, 54, 0.08);
+  color: rgba(15, 29, 54, 0.72);
 }
 .teamSocial svg {
   width: 16px;
@@ -475,13 +481,13 @@ a {
   background: #fff;
 }
 .sermonsFeature__left {
-  padding: 0;
+  padding: 36px 36px;
   background: #fff;
 }
 .sermonsFeature__image {
   background:
     radial-gradient(900px 420px at 50% 10%, rgba(255, 255, 255, 0.18), transparent 55%),
-    linear-gradient(135deg, rgba(244, 199, 154, 0.28), rgba(18, 18, 20, 0.12)),
+    linear-gradient(135deg, rgba(201, 162, 39, 0.28), rgba(15, 29, 54, 0.12)),
     url("https://source.unsplash.com/1200x800/?african,church,sermon");
   background-size: cover;
   background-position: center;
@@ -495,7 +501,7 @@ a {
 /* Event cards */
 .eventCard {
   position: relative;
-  background: #fbf4ea;
+  background: #f0f4fb;
   padding: 34px 28px 28px;
   min-height: 290px;
 }
@@ -526,7 +532,7 @@ a {
 }
 .eventCard__kicker {
   margin: 0 0 10px;
-  color: rgba(17, 18, 20, 0.65);
+  color: rgba(15, 29, 54, 0.65);
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -541,7 +547,7 @@ a {
 }
 .eventCard__body {
   margin: 0 0 14px;
-  color: rgba(17, 18, 20, 0.68);
+  color: rgba(15, 29, 54, 0.68);
   line-height: 1.8;
   font-size: 13px;
 }
@@ -551,7 +557,7 @@ a {
   margin: 0 0 18px;
   display: grid;
   gap: 10px;
-  color: #1b1b1c;
+  color: var(--ink);
   font-size: 13px;
 }
 .eventCard__meta li {
@@ -634,8 +640,8 @@ a {
   border-radius: 999px;
   display: grid;
   place-items: center;
-  background: rgba(244, 199, 154, 0.35);
-  color: #121214;
+  background: rgba(201, 162, 39, 0.35);
+  color: var(--ink);
   margin-bottom: 16px;
 }
 .featureCard__icon svg {
@@ -673,7 +679,7 @@ a {
 .photoCollage__img--left {
   background-image:
     radial-gradient(700px 260px at 40% 10%, rgba(255, 255, 255, 0.18), transparent 55%),
-    linear-gradient(135deg, rgba(244, 199, 154, 0.65), rgba(20, 20, 22, 0.1)),
+    linear-gradient(135deg, rgba(201, 162, 39, 0.65), rgba(15, 29, 54, 0.1)),
     url("https://source.unsplash.com/800x800/?african,prayer,church");
 }
 .photoCollage__img--center {
@@ -681,13 +687,13 @@ a {
   transform: translateY(12px);
   background-image:
     radial-gradient(700px 260px at 50% 20%, rgba(255, 255, 255, 0.16), transparent 60%),
-    linear-gradient(135deg, rgba(18, 18, 20, 0.1), rgba(244, 199, 154, 0.55)),
+    linear-gradient(135deg, rgba(15, 29, 54, 0.1), rgba(201, 162, 39, 0.55)),
     url("https://source.unsplash.com/900x900/?african,worship,church");
 }
 .photoCollage__img--right {
   background-image:
     radial-gradient(700px 260px at 40% 10%, rgba(255, 255, 255, 0.18), transparent 55%),
-    linear-gradient(135deg, rgba(244, 199, 154, 0.55), rgba(20, 20, 22, 0.15)),
+    linear-gradient(135deg, rgba(201, 162, 39, 0.55), rgba(15, 29, 54, 0.15)),
     url("https://source.unsplash.com/800x800/?african,community,church");
 }
 
@@ -722,25 +728,25 @@ a {
 .benefitCard--one {
   background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.8)),
-    radial-gradient(1000px 300px at 20% 10%, rgba(244, 199, 154, 0.35), transparent 60%),
+    radial-gradient(1000px 300px at 20% 10%, rgba(201, 162, 39, 0.35), transparent 60%),
     url("https://source.unsplash.com/700x500/?african,preaching,church");
 }
 .benefitCard--two {
   background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.8)),
-    radial-gradient(1000px 300px at 70% 10%, rgba(244, 199, 154, 0.35), transparent 60%),
+    radial-gradient(1000px 300px at 70% 10%, rgba(201, 162, 39, 0.35), transparent 60%),
     url("https://source.unsplash.com/700x500/?african,bible,church");
 }
 .benefitCard--three {
   background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.8)),
-    radial-gradient(1000px 300px at 30% 10%, rgba(244, 199, 154, 0.35), transparent 60%),
+    radial-gradient(1000px 300px at 30% 10%, rgba(201, 162, 39, 0.35), transparent 60%),
     url("https://source.unsplash.com/700x500/?african,choir,worship,church");
 }
 .benefitCard--four {
   background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.8)),
-    radial-gradient(1000px 300px at 60% 10%, rgba(244, 199, 154, 0.35), transparent 60%),
+    radial-gradient(1000px 300px at 60% 10%, rgba(201, 162, 39, 0.35), transparent 60%),
     url("https://source.unsplash.com/700x500/?african,children,church,community");
 }
 .benefitCard__overlay {
@@ -813,7 +819,7 @@ a {
 }
 .sermonCard__kicker {
   margin: 0 0 10px;
-  color: rgba(17, 18, 20, 0.7);
+  color: rgba(15, 29, 54, 0.7);
   font-size: 12px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -837,7 +843,7 @@ a {
   margin: 0 0 18px;
   display: grid;
   gap: 10px;
-  color: #1b1b1c;
+  color: var(--ink);
   font-size: 13px;
 }
 .sermonCard__meta li {
@@ -851,8 +857,8 @@ a {
   display: grid;
   place-items: center;
   border-radius: 999px;
-  background: rgba(244, 199, 154, 0.35);
-  color: #121214;
+  background: rgba(201, 162, 39, 0.35);
+  color: var(--ink);
 }
 .metaIcon svg {
   width: 14px;
@@ -866,7 +872,7 @@ a {
   box-shadow: var(--shadow);
   background:
     radial-gradient(800px 420px at 60% 10%, rgba(255, 255, 255, 0.18), transparent 55%),
-    linear-gradient(135deg, rgba(244, 199, 154, 0.45), rgba(18, 18, 20, 0.12)),
+    linear-gradient(135deg, rgba(201, 162, 39, 0.45), rgba(15, 29, 54, 0.12)),
     url("https://source.unsplash.com/1200x800/?african,church,service,worship");
   background-size: cover;
   background-position: center;
@@ -878,7 +884,7 @@ a {
   margin-top: 14px;
 }
 .viewAll__link {
-  color: #121214;
+  color: var(--ink);
   font-weight: 600;
   letter-spacing: 0.02em;
 }
@@ -893,8 +899,8 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(246, 240, 231, 0.1), rgba(246, 240, 231, 0.9)),
-    radial-gradient(1000px 520px at 60% 30%, rgba(244, 199, 154, 0.42), transparent 62%),
+    linear-gradient(180deg, rgba(15, 29, 54, 0.08), rgba(238, 242, 248, 0.92)),
+    radial-gradient(1000px 520px at 60% 30%, rgba(201, 162, 39, 0.30), transparent 62%),
     url("https://source.unsplash.com/1400x900/?african,community,church,city");
   background-size: cover;
   background-position: center;
@@ -918,7 +924,7 @@ a {
   right: 34px;
   top: 20px;
   font-size: 120px;
-  color: rgba(244, 199, 154, 0.35);
+  color: rgba(201, 162, 39, 0.35);
   line-height: 1;
 }
 .serveWorld__title {
@@ -959,7 +965,7 @@ a {
 .blogCard__media {
   position: relative;
   aspect-ratio: 16 / 10;
-  background: linear-gradient(135deg, rgba(244, 199, 154, 0.25), rgba(18, 18, 20, 0.08));
+  background: linear-gradient(135deg, rgba(201, 162, 39, 0.25), rgba(15, 29, 54, 0.08));
 }
 .blogCard__img {
   width: 100%;
@@ -979,7 +985,7 @@ a {
 }
 .blogCard__kicker {
   margin: 0 0 12px;
-  color: rgba(17, 18, 20, 0.55);
+  color: rgba(15, 29, 54, 0.55);
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-weight: 700;
@@ -1002,12 +1008,12 @@ a {
   margin: 0;
   font-weight: 600;
   font-size: 12px;
-  color: rgba(17, 18, 20, 0.72);
+  color: rgba(15, 29, 54, 0.72);
 }
 
 /* Footer */
 .footer {
-  background: #0d0d10;
+  background: #0a1526;
   color: rgba(255, 255, 255, 0.9);
   padding: 64px 0;
 }
@@ -1022,6 +1028,12 @@ a {
   color: #fff;
   font-weight: 800;
   margin-bottom: 10px;
+}
+.footer__logoImg {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 .footer__text {
   margin: 0 0 8px;
@@ -1145,7 +1157,7 @@ a {
     display: block;
     position: fixed;
     inset: 76px 0 auto 0;
-    background: rgba(11, 11, 13, 0.92);
+    background: rgba(10, 21, 38, 0.96);
     backdrop-filter: blur(10px);
     transform: translateY(-12px);
     opacity: 0;
@@ -1218,5 +1230,713 @@ a {
   }
   .blogCard:hover .blogCard__img {
     transform: none;
+  }
+}
+
+/* ─── 2026 Theme Banner ───────────────────────────────── */
+.themeBanner {
+  width: 100%;
+  line-height: 0;
+}
+.themeBanner__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ─── Nav Give button ─────────────────────────────────── */
+.nav__give {
+  margin-left: 8px;
+}
+
+/* ─── Hero: CTAs + Service Times ─────────────────────── */
+.btn--outline {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #fff;
+}
+.btn--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.btn--outline--dark {
+  background: transparent;
+  border-color: rgba(15, 29, 54, 0.3);
+  color: var(--ink);
+}
+.btn--outline--dark:hover {
+  background: rgba(15, 29, 54, 0.06);
+}
+.hero__ctas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.serviceTimes {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 18px 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6px);
+}
+.serviceTime {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.serviceTime__day {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--cream);
+}
+.serviceTime__hours {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 500;
+}
+.serviceTime__divider {
+  width: 1px;
+  background: rgba(255, 255, 255, 0.18);
+  align-self: stretch;
+}
+
+/* ─── About Section ───────────────────────────────────── */
+.beliefsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 32px 0 60px;
+}
+.beliefCard {
+  background: var(--sand);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.beliefCard__title {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.beliefCard__body {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.leadershipGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 32px;
+}
+.leaderCard {
+  background: var(--sand);
+  border-radius: var(--radius);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.leaderCard__avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a3a6b, #0f1d36);
+  margin-bottom: 12px;
+  object-fit: cover;
+  border: 3px solid rgba(201, 162, 39, 0.4);
+}
+.leaderCard__name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.leaderCard__role {
+  margin: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  font-weight: 600;
+}
+.leaderCard__bio {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.75;
+  flex: 1;
+}
+.leaderCard__phone {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-top: 4px;
+}
+
+/* ─── Sermons Section ─────────────────────────────────── */
+.sermonsFeature__title {
+  margin: 8px 0 12px;
+  font-size: clamp(22px, 2vw, 32px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.sermonsFeature__body {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.sermonsFeature__meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--muted);
+  margin: 14px 0 0;
+}
+.sermonsFeature__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.sermonsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 40px 0 32px;
+}
+.sermonMiniCard {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 24px;
+  border: 1px solid rgba(15, 29, 54, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sermonMiniCard__date {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--cream);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0;
+}
+.sermonMiniCard__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.sermonMiniCard__speaker {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+  margin: 0;
+}
+.sermonMiniCard__body {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  flex: 1;
+  margin: 0;
+}
+
+/* ─── Events Section ──────────────────────────────────── */
+.programsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+}
+.programCard {
+  background: var(--sand);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  text-align: center;
+}
+.programCard__icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+.programCard__name {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.programCard__day {
+  margin: 0 0 2px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-weight: 600;
+}
+.programCard__time {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ─── Ministries Section ──────────────────────────────── */
+.ministriesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.ministryCard {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 28px;
+  border: 1px solid rgba(15, 29, 54, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ministryCard__icon {
+  font-size: 32px;
+  line-height: 1;
+}
+.ministryCard__name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.ministryCard__leader {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0;
+}
+.ministryCard__leader a {
+  color: var(--ink);
+  font-weight: 600;
+}
+.ministryCard__desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+  flex: 1;
+  margin: 0;
+}
+.ministryCard__schedule {
+  font-size: 12px;
+  color: var(--ink);
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ─── Give Section ────────────────────────────────────── */
+.giveGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 40px 0 32px;
+}
+.giveCard {
+  background: var(--sand);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.giveCard__icon {
+  font-size: 40px;
+  line-height: 1;
+}
+.giveCard__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.giveCard__body {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+.giveCard__detail {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.75;
+}
+.giveCard__detail a {
+  font-weight: 700;
+  color: var(--ink);
+}
+.giveCard__note {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+  font-style: italic;
+}
+.giveNote {
+  background: var(--sand);
+  border-radius: var(--radius);
+  padding: 36px 40px;
+}
+.giveNote__title {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.giveNote__list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.giveNote__list li {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ─── New Here Section ────────────────────────────────── */
+.newHereGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 40px;
+  align-items: start;
+}
+.newHereInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.visitCard {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.visitCard__icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+}
+.visitCard__title {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.visitCard p {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.newHereForm {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--shadow);
+}
+.newHereForm__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+.newHereForm__subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.visitForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ─── Shared form styles ──────────────────────────────── */
+.formInput {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.5px solid rgba(15, 29, 54, 0.15);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--bg);
+  outline: none;
+  transition: border-color 150ms ease;
+}
+.formInput:focus {
+  border-color: var(--cream);
+}
+.formInput--textarea {
+  resize: vertical;
+}
+.formSuccess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+  padding: 48px 24px;
+}
+.formSuccess span {
+  font-size: 52px;
+}
+.formSuccess p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 420px;
+  margin: 0;
+}
+
+/* ─── Prayer Section ──────────────────────────────────── */
+.prayerFormWrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.prayerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.prayerForm__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.prayerForm__privacy {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.prayerForm__privacyLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 2px;
+}
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+/* ─── Contact Section ─────────────────────────────────── */
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 48px;
+  margin-top: 40px;
+  align-items: start;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contactDetail__title {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.contactDetail p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+.contactDetail a {
+  color: var(--ink);
+  font-weight: 600;
+}
+.contactSocial {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.contactForm {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--shadow);
+}
+.contactForm__title {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.mapEmbed {
+  margin-top: 48px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* ─── Footer extras ───────────────────────────────────── */
+.footer__serviceTimes {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.8;
+}
+.footer__serviceTimes strong {
+  color: rgba(255, 255, 255, 0.85);
+}
+.footer__serviceTimes a,
+.footer__text a {
+  color: rgba(255, 255, 255, 0.85);
+}
+.footer__legal {
+  margin-top: 12px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.footer__legal a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer__legal a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ─── Gallery Page ────────────────────────────────────── */
+.pageHero--gallery {
+  background: linear-gradient(135deg, #0f1d36 0%, #1a3a6b 100%);
+}
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+.galleryItem {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+}
+.galleryItem__img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: transform 320ms ease;
+}
+.galleryItem:hover .galleryItem__img {
+  transform: scale(1.04);
+}
+.galleryItem__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 14px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* ─── Responsive: new sections ───────────────────────── */
+@media (max-width: 980px) {
+  .beliefsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .leadershipGrid {
+    grid-template-columns: 1fr;
+  }
+  .sermonsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .programsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ministriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .giveGrid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .newHereGrid {
+    grid-template-columns: 1fr;
+  }
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .hero__ctas {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .serviceTimes {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .serviceTime__divider {
+    display: none;
+  }
+  .beliefsGrid {
+    grid-template-columns: 1fr;
+  }
+  .sermonsGrid {
+    grid-template-columns: 1fr;
+  }
+  .sermonsFeature__actions {
+    flex-direction: column;
+  }
+  .programsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ministriesGrid {
+    grid-template-columns: 1fr;
+  }
+  .newHereInfo {
+    grid-template-columns: 1fr;
+  }
+  .prayerForm__row {
+    grid-template-columns: 1fr;
+  }
+  .galleryGrid {
+    grid-template-columns: 1fr;
+  }
+  .giveNote {
+    padding: 24px 20px;
+  }
+  .leaderCard {
+    padding: 24px;
   }
 }
